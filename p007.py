@@ -10,7 +10,7 @@ def PrimeCheck(n: int) -> bool:
     """
     if n <= 3:
         return n > 1
-    if n % 2 == 0 or n % 3 == 0 or n % 7 == 0:
+    if n % 2 == 0 or n % 3 == 0:
         return False
     limit = isqrt(n)
     for i in range(
@@ -34,5 +34,5 @@ while len(primes) < cardinality:
         primes.append(i)
     i = i + 1
 
-print(primes[-2])
+print(primes[-1])
 print(len(primes))
